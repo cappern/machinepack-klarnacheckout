@@ -1,0 +1,32 @@
+{
+  "name": "machinepack-klarnacheckout",
+  "version": "0.1.0",
+  "description": "Klarna Check Out",
+  "scripts": {
+    "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
+  },
+  "keywords": [
+    "Klarna Check Out",
+    "machines",
+    "machinepack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "machine": "^10.0.0",
+    "klarna-checkout": "*"
+  },
+  "devDependencies": {
+    "test-machinepack-mocha": "^2.0.0"
+  },
+  "machinepack": {
+    "friendlyName": "Klarna Check Out",
+    "machineDir": "machines/",
+    "machines": [
+      "place-order",
+      "fetchorder",
+      "confirm-order",
+      "update-order"
+    ]
+  }
+}
